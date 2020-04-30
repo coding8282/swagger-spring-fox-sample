@@ -35,9 +35,9 @@ class SwaggerConfig(
                     .title(buildProperties.name)
                     .version(buildProperties.version)
                     .license("Apache License Version 2.0")
-                    .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0\n")
+                    .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0")
                     .contact(Contact("Soo", "coding8282", "coding8282@gmail.com"))
-                    .termsOfServiceUrl("asdfasdf")
+                    .termsOfServiceUrl("http://terms.com")
                     .build())
             .useDefaultResponseMessages(false)
             .ignoredParameterTypes(

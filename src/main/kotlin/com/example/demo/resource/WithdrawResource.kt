@@ -31,7 +31,6 @@ class WithdrawResource {
     @PostMapping("/api/withdraw", consumes = [APPLICATION_FORM_URLENCODED_VALUE], produces = [APPLICATION_JSON_VALUE])
     fun withdraw4(@Valid request: WithdrawRequest) = withdrawInternal(request)
 
-    @ApiIgnore("No more supports.")
     @PostMapping("/api/withdraw", consumes = [APPLICATION_ATOM_XML_VALUE], produces = [APPLICATION_JSON_VALUE])
     fun withdraw5(@Valid request: WithdrawRequest) = withdrawInternal(request)
 
