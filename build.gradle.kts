@@ -12,6 +12,8 @@ group = "com.example"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
+springBoot.buildInfo { properties { } }
+
 repositories {
     jcenter()
     maven(url = "http://oss.jfrog.org/artifactory/oss-snapshot-local/")

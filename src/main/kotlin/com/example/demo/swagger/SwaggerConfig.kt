@@ -25,15 +25,15 @@ import java.util.*
 @EnableSwagger2WebFlux
 @Import(BeanValidatorPluginsConfiguration::class)
 class SwaggerConfig(
-//        private val buildProperties: BuildProperties
+        private val buildProperties: BuildProperties
 ) {
     @Bean
     fun docket() = Docket(SWAGGER_2)
             .enable(true)
             .apiInfo(ApiInfoBuilder()
                     .description("Sample APIs")
-//                    .title(buildProperties.name)
-//                    .version(buildProperties.version)
+                    .title(buildProperties.name)
+                    .version(buildProperties.version)
                     .license("Apache License Version 2.0")
                     .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0\n")
                     .contact(Contact("Soo", "coding8282", "coding8282@gmail.com"))
